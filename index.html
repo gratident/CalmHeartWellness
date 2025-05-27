@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmHeartWellness | ご自宅でできる安心フットケア・訪問爪切りサービス</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+        }
+        .orange-accent {
+            background-color: #FF7A30;
+        }
+        .orange-text {
+            color: #FF7A30;
+        }
+        .btn-orange {
+            background-color: #FF7A30;
+            color: white;
+            transition: all 0.3s;
+        }
+        .btn-orange:hover {
+            background-color: #E86C25;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            padding: 3rem 1rem;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+        }
+        .hero-image {
+            height: 300px;
+            background-color: #FFF5F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-text {
+            text-align: center;
+            z-index: 10;
+        }
+        .service-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .flow-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #FF7A30;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold orange-text">CalmHeartWellness</h1>
+            <div class="hidden md:block">
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 mr-4">お問い合わせ</a>
+                <a href="#reservation" class="btn-orange px-4 py-2 rounded-full font-medium">ご予約はこちら</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-image">
+            <div class="container mx-auto px-4">
+                <div class="hero-text">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">ご自宅でできる安心フットケア</h2>
+                    <p class="text-xl md:text-2xl mb-8">CalmHeartWellness（カームハートウェルネス）</p>
+                    <a href="#reservation" id="reservation" class="btn-orange px-8 py-3 rounded-full font-medium text-lg inline-flex items-center">
+                        <i class="fab fa-line mr-2 text-xl"></i> LINE予約はこちら
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Introduction -->
+        <section class="section bg-gray-50" id="services">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-10 text-center">サービス内容</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="service-card bg-white p-6">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-hand-sparkles text-4xl orange-text"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-center">爪切り (手・足)</h3>
+                        <p class="text-gray-600 text-center mb-4">プロによる安全な爪のカットとケア</p>
+                        <div class="bg-gray-100 p-3 rounded-lg text-center">
+                            <p class="font-bold">手: 1,500円</p>
+                            <p class="font-bold">足: 1,800円</p>
+                            <p class="font-bold">両方セット: 3,000円</p>
+                        </div>
+                    </div>
+                    <div class="service-card bg-white p-6">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-spa text-4xl orange-text"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-center">角質ケア</h3>
+                        <p class="text-gray-600 text-center mb-4">角質の除去で足裏の健康をサポート ※タコ・魚の目は対象外</p>
+                        <div class="bg-gray-100 p-3 rounded-lg text-center">
+                            <p class="font-bold">角質ケア: 1,000円</p>
+                        </div>
+                    </div>
+                    <div class="service-card bg-white p-6">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-heart text-4xl orange-text"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-center">安心のサービス</h3>
+                        <p class="text-gray-600 text-center mb-4">ご高齢の方や妊娠中の方も安心してご利用いただけます</p>
+                        <div class="bg-gray-100 p-3 rounded-lg text-center">
+                            <p class="text-sm text-gray-600">※料金は税込・現金のみ</p>
+                            <p class="text-sm text-gray-600">※交通費込み（遠軽町周辺）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations -->
+        <section class="section bg-white" id="recommendations">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-10 text-center">このような方におすすめ</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-check-circle orange-text text-xl mr-2"></i>
+                            <h3 class="text-xl font-bold">足の爪が切りづらい方</h3>
+                        </div>
+                        <p class="text-gray-600">腰や膝の痛みがある方、手が届きにくい方におすすめです。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-check-circle orange-text text-xl mr-2"></i>
+                            <h3 class="text-xl font-bold">自宅でケアを受けたい方</h3>
+                        </div>
+                        <p class="text-gray-600">外出が難しい方や、自宅でリラックスしてケアを受けたい方に。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-check-circle orange-text text-xl mr-2"></i>
+                            <h3 class="text-xl font-bold">デイサービスでのケア補助に</h3>
+                        </div>
+                        <p class="text-gray-600">介護施設でのフットケアの補助として利用いただけます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Flow -->
+        <section class="section bg-gray-50" id="flow">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-10 text-center">ご利用の流れ</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="flex flex-col md:flex-row items-start mb-12">
+                        <div class="flow-number mb-4 md:mb-0 md:mr-6">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">LINEでご予約</h3>
+                            <p class="text-gray-600 mb-4">カレンダーから希望日時をお選びいただき、ご予約確定となります。</p>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <a href="#reservation" class="btn-orange px-6 py-2 rounded-full font-medium inline-flex items-center">
+                                    <i class="fab fa-line mr-2"></i> 予約する
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start mb-12">
+                        <div class="flow-number mb-4 md:mb-0 md:mr-6">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">ご自宅や施設へ訪問</h3>
+                            <p class="text-gray-600 mb-4">予約日時に、必要な器具を持ってご自宅や施設へ伺います。</p>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <p class="text-sm text-gray-600"><i class="fas fa-info-circle mr-1 orange-text"></i> 特別な準備は不要です。椅子と電源のみお借りする場合があります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start">
+                        <div class="flow-number mb-4 md:mb-0 md:mr-6">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">丁寧にケア／アフター説明</h3>
+                            <p class="text-gray-600 mb-4">お客様のご状態に合わせて丁寧にケアします。施術後はアフターケアについてもご説明いたします。</p>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <p class="text-sm text-gray-600"><i class="fas fa-clock mr-1 orange-text"></i> お一人約20～30分程度のお時間をいただいております。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Hours & Areas -->
+        <section class="section bg-white" id="area">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-10 text-center">営業日・対応エリア</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <i class="far fa-calendar-alt mr-2 orange-text"></i> 営業日時
+                        </h3>
+                        <p class="text-lg mb-2"><span class="font-bold">営業日:</span> 土日のみ</p>
+                        <p class="text-lg"><span class="font-bold">営業時間:</span> 9:00～17:00</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 orange-text"></i> 対応エリア
+                        </h3>
+                        <p class="text-lg mb-2"><span class="font-bold">主な対応エリア:</span></p>
+                        <p class="text-lg">遠軽町および周辺地域</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section bg-gray-50" id="faq">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-10 text-center">よくある質問</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="faq-item py-4">
+                        <h3 class="text-xl font-bold mb-2">Q. 準備するものはありますか？</h3>
+                        <p class="text-gray-600">特にありません。椅子と電源のみお借りする場合があります。</p>
+                    </div>
+                    <div class="faq-item py-4">
+                        <h3 class="text-xl font-bold mb-2">Q. どのくらい時間がかかりますか？</h3>
+                        <p class="text-gray-600">お一人約20～30分程度です。</p>
+                    </div>
+                    <div class="faq-item py-4">
+                        <h3 class="text-xl font-bold mb-2">Q. 男性も利用できますか？</h3>
+                        <p class="text-gray-600">はい、可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section bg-white" id="contact">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-10 text-center">お問い合わせ</h2>
+                <div class="max-w-xl mx-auto text-center">
+                    <p class="text-lg mb-6">LINEでのお問い合わせがスムーズです。お急ぎの場合はお電話も対応可能です。</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <a href="#reservation" class="btn-orange px-6 py-4 rounded-lg font-medium text-lg inline-flex items-center justify-center w-full">
+                            <i class="fab fa-line mr-2 text-2xl"></i> LINEでお問い合わせ
+                        </a>
+                        <div class="bg-gray-100 px-6 py-4 rounded-lg font-medium text-lg inline-flex items-center justify-center w-full">
+                            <i class="fas fa-phone-alt mr-2"></i> 080-XXXX-XXXX
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500">※営業時間内でのご対応となります</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold">CalmHeartWellness</h2>
+                    <p class="text-gray-400">ご自宅でできる安心フットケア</p>
+                </div>
+                <div>
+                    <a href="#services" class="text-gray-400 hover:text-white mr-4">サービス内容</a>
+                    <a href="#flow" class="text-gray-400 hover:text-white mr-4">ご利用の流れ</a>
+                    <a href="#faq" class="text-gray-400 hover:text-white">よくある質問</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 CalmHeartWellness All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
