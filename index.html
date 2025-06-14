@@ -7,13 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=barefoot" />
     <style>
         body {
             font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fab68e;
             color: #333;
         }
         .orange-accent {
-            background-color: #FF7A30;
+            color: #f56c1d;
         }
         .orange-text {
             color: #FF7A30;
@@ -30,13 +32,14 @@
         }
         .section {
             padding: 3rem 1rem;
+            background-color: #fdc09c;
         }
         .faq-item {
             border-bottom: 1px solid #eee;
         }
         .hero-image {
             height: 300px;
-            background-color: #FFF5F0;
+            background-color: #fa9b73;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -50,6 +53,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             transition: all 0.3s;
+            background-color: #fa9b73;
         }
         .service-card:hover {
             transform: translateY(-5px);
@@ -66,15 +70,32 @@
             justify-content: center;
             font-weight: bold;
         }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 100,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .orange-icon {
+            color: #FF7A30;
+        }
+        .material-symbols-outlined.size-40 {
+            font-size: 40px;
+        }
+        header {
+            background-color: #fdc09c;
+        }
+</style>
     </style>
 </head>
-<body class="bg-white">
-    <header class="bg-white shadow-sm py-4">
+<body>
+    <header class="shadow-sm py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold orange-text">CalmHeartWellness</h1>
             <div class="hidden md:block">
                 <a href="#contact" class="text-gray-600 hover:text-gray-900 mr-4">お問い合わせ</a>
-                <a href="#reservation" class="btn-orange px-4 py-2 rounded-full font-medium">ご予約はこちら</a>
+                <a href="https://lin.ee/uaMW1SC" class="btn-orange px-4 py-2 rounded-full font-medium">ご予約はこちら</a>
             </div>
         </div>
     </header>
@@ -86,7 +107,7 @@
                 <div class="hero-text">
                     <h2 class="text-4xl md:text-5xl font-bold mb-4">ご自宅でできる安心フットケア</h2>
                     <p class="text-xl md:text-2xl mb-8">CalmHeartWellness（カームハートウェルネス）</p>
-                    <a href="#reservation" id="reservation" class="btn-orange px-8 py-3 rounded-full font-medium text-lg inline-flex items-center">
+                    <a href="https://lin.ee/uaMW1SC" id="reservation" class="btn-orange px-8 py-3 rounded-full font-medium text-lg inline-flex items-center">
                         <i class="fab fa-line mr-2 text-xl"></i> LINE予約はこちら
                     </a>
                 </div>
@@ -100,7 +121,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="service-card bg-white p-6">
                         <div class="text-center mb-4">
-                            <i class="fas fa-hand-sparkles text-4xl orange-text"></i>
+                            <i class="fas fa-hand-sparkles text-4xl orange-accent"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2 text-center">爪切り (手・足)</h3>
                         <p class="text-gray-600 text-center mb-4">プロによる安全な爪のカットとケア</p>
@@ -112,17 +133,17 @@
                     </div>
                     <div class="service-card bg-white p-6">
                         <div class="text-center mb-4">
-                            <i class="fas fa-spa text-4xl orange-text"></i>
+                            <span class="material-symbols-outlined orange-accent size-40">barefoot</span>
                         </div>
                         <h3 class="text-xl font-bold mb-2 text-center">角質ケア</h3>
-                        <p class="text-gray-600 text-center mb-4">角質の除去で足裏の健康をサポート ※タコ・魚の目は対象外</p>
+                        <p class="text-gray-600 text-center mb-4">角質の除去で足裏の健康をサポート<br>※タコ・魚の目は対象外</p>
                         <div class="bg-gray-100 p-3 rounded-lg text-center">
                             <p class="font-bold">角質ケア: 1,000円</p>
                         </div>
                     </div>
                     <div class="service-card bg-white p-6">
                         <div class="text-center mb-4">
-                            <i class="fas fa-heart text-4xl orange-text"></i>
+                            <i class="fas fa-heart text-4xl orange-accent"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2 text-center">安心のサービス</h3>
                         <p class="text-gray-600 text-center mb-4">ご高齢の方や妊娠中の方も安心してご利用いただけます</p>
@@ -174,7 +195,7 @@
                         <div class="flow-number mb-4 md:mb-0 md:mr-6">1</div>
                         <div>
                             <h3 class="text-xl font-bold mb-2">LINEでご予約</h3>
-                            <p class="text-gray-600 mb-4">カレンダーから希望日時をお選びいただき、ご予約確定となります。</p>
+                            <p class="text-gray-600 mb-4">希望日時を送っていただき、ご予約確定となります。</p>
                             <div class="bg-white p-4 rounded-lg shadow-sm">
                                 <a href="#reservation" class="btn-orange px-6 py-2 rounded-full font-medium inline-flex items-center">
                                     <i class="fab fa-line mr-2"></i> 予約する
@@ -257,7 +278,7 @@
                 <div class="max-w-xl mx-auto text-center">
                     <p class="text-lg mb-6">LINEでのお問い合わせがスムーズです。お急ぎの場合はお電話も対応可能です。</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <a href="#reservation" class="btn-orange px-6 py-4 rounded-lg font-medium text-lg inline-flex items-center justify-center w-full">
+                        <a href="https://lin.ee/uaMW1SC" class="btn-orange px-6 py-4 rounded-lg font-medium text-lg inline-flex items-center justify-center w-full">
                             <i class="fab fa-line mr-2 text-2xl"></i> LINEでお問い合わせ
                         </a>
                         <div class="bg-gray-100 px-6 py-4 rounded-lg font-medium text-lg inline-flex items-center justify-center w-full">
